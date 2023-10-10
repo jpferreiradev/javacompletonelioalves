@@ -1,3 +1,5 @@
+package EstruturaSequencial;
+
 public class Carro {
 
         private String nome;
