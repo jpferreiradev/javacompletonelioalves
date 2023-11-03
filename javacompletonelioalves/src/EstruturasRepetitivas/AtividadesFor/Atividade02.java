@@ -18,10 +18,10 @@ public class Atividade02 {
             int x = scan.nextInt();
 
             if (x >= 10 && x <= 20) {
-                in = in + 1;
+                in = in + 1; // Aqui é o contador
 
             } else {
-                out = out + 1;
+                out = out + 1; // Aqui é o contador
 
             }
         }
