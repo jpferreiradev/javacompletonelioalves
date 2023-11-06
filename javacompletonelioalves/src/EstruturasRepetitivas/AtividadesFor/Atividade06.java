@@ -9,17 +9,25 @@ public class Atividade06 {
 
         int divisao;
 
+
         System.out.println("Digite um valor inteiro: ");
         int n = scan.nextInt();
 
-        //divisao = n / n;
-        //System.out.println(divisao);
 
-
-        for (int i = 0; i < n; i++) {
-            divisao = n / n;
-            System.out.println(divisao);
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                System.out.println(i);
+            }
         }
 
+
+
     }
+
 }
+
+
+/*
+        divisao = n / i;
+        System.out.println(divisao);
+ */
