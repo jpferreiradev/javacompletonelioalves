@@ -10,16 +10,13 @@ public class Atividade07 {
         System.out.println("Digite um valor");
         double valor = scan.nextInt();
 
-        int linha = 1;
+        for(int i = 0; i <= valor; i++){
+            int primeiro = i;
+            int segundo = i * i;
+            int terceiro = i * i * i;
+            System.out.printf("%d %d %d%n", primeiro, segundo, terceiro);
+        }
 
-        for (linha = 1; linha <= valor; linha++)
-            for (int j = 1; j <= valor; j++) {
-
-                System.out.print(linha + " ");
-                System.out.print(Math.pow(j, 2) + " ");
-                System.out.print(Math.pow(j, 3) + " ");
-
-            }
 
     }
 
@@ -29,9 +26,15 @@ public class Atividade07 {
 
 /*
 
+ int linha = 1;
 
+        for (linha = 1; linha <= valor; linha++)
+            for (int j = 1; j <= valor; j++) {
+
+                System.out.printf(linha + " ");
+                System.out.printf(Math.pow(j, 2) + " ");
+                System.out.printf(Math.pow(j, 3) + " ");
 
             }
 
-        }
  */
