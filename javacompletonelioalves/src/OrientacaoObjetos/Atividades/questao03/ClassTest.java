@@ -1,15 +1,23 @@
 package OrientacaoObjetos.Atividades.questao03;
 
 import java.util.ArrayList;
+import java.util.Scanner;
+
 
 public class ClassTest {
     public static void main(String[] args) {
 
-    Estudante estudante = new Estudante();
+        Estudante estudante = new Estudante();
 
-    double primeiraNota = estudante.nota;
-    double segundaNota = estudante.nota;
-    double terceiraNota = estudante.nota;
+        estudante.media();
+
+
+
+
+
+
+
+
 
     }
 }
