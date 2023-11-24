@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class ExemploClasseSemOo {
     public static void main(String[] args) {
 
+
         Scanner scan = new Scanner(System.in);
 
         Triangle x, y;
