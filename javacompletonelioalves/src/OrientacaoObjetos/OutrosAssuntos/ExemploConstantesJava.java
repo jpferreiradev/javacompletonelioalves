@@ -1,4 +1,4 @@
-package OrientacaoObjetos;
+package OrientacaoObjetos.OutrosAssuntos;
 
 public class ExemploConstantesJava {
 
