@@ -12,20 +12,40 @@ public class ExempleTwo {
         int n = scan.nextInt();
         Product[] vect = new Product[n];
 
-        for(int i = 0; i < vect.length;i++){
-           scan.nextLine();
+        for (int i = 0; i < vect.length; i++) { // vetor criado no tipo referencia ( classe)
+            scan.nextLine(); // Aqui é usado por causa da quebra de linha pedente;
             String name = scan.nextLine();
             double price = scan.nextDouble();
             vect[i] = new Product(name,price);
         }
+        double sum = 0.0;
+        for(int i = 0; i < vect.length;i++){
+            sum += vect[i].getPrice();
+        }
+        double avg = sum / vect.length;
+        System.out.printf("Average price = %.2f%n", avg);
+    }
+}
+
+/*
+    // Exemplo vetor tipo referencia( classe)
+        Scanner scan = new Scanner(System.in);
+
+        int n = scan.nextInt();
+        Product[] vect = new Product[n];
+
+        for (int i = 0; i < vect.length; i++) {
+            scan.nextLine();
+            String name = scan.nextLine();
+            double price = scan.nextDouble();
+            vect[i] = new Product(name, price);
+        }
 
         double sum = 0.0; //?
-        for(int i =0; i < vect.length;i++){
+        for (int i = 0; i < vect.length; i++) {
             sum += vect[i].getPrice();
         }
         double avg = sum / vect.length;
 
-        System.out.printf("AVERAGE PRICE = %.2f%n" , avg);
-
-    }
-}
+        System.out.printf("AVERAGE PRICE = %.2f%n", avg);
+ */

@@ -34,7 +34,6 @@ public class segundoExercicio {
 
             System.out.print("VALORES = ");
 
-
             for (int i = 0; i < n; i++) { // Imprimiu os valores das notas no print
                 System.out.printf("%.1f  ", vetor[i]);
             }
