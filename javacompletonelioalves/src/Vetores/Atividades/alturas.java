@@ -1,8 +1,8 @@
-package Vetores.Atividades.atividade3;
+package Vetores.Atividades;
 
 import java.util.Scanner;
 
-public class terceiroExercicio {
+public class alturas {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

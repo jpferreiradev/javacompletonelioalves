@@ -2,7 +2,7 @@ package Vetores.Atividades;
 
 import java.util.Scanner;
 
-public class primeiroExercicio {
+public class negativos {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

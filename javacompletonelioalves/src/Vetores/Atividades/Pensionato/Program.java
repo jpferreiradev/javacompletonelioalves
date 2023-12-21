@@ -23,7 +23,7 @@ public class Program {
             System.out.print("Room: ");
             int roomNumber = scan.nextInt();
 
-            vect[roomNumber] = new Rent(name, email); // Ele instanciou o
+            vect[roomNumber] = new Rent(name, email); // Ele instanciou o vetor direto
         }
         System.out.println();
         System.out.println("Busy rooms:");
