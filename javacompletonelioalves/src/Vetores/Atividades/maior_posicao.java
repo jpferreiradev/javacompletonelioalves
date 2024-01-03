@@ -7,8 +7,11 @@ public class maior_posicao {
 
         Scanner scan = new Scanner(System.in);
 
+        int n,posMaior;
+        double maior;
+
         System.out.print("Quantos números você vai digitar? ");
-        int n = scan.nextInt();
+        n = scan.nextInt();
 
         double[] numeros = new double[n];
 
@@ -24,13 +27,22 @@ public class maior_posicao {
             System.out.print(" " + numeros[i]);
         }
 
+       maior = numeros[0];
+        posMaior = 0;
+
+
         System.out.println();
-        System.out.println("Maior valor = ");
+
         for(int i = 0; i < numeros.length;i++){
-            if(n < numeros[i]){
-                System.out.println(n);
+            if(numeros[i] > maior){
+                maior = numeros[i];
+                posMaior = i;
             }
         }
+
+        System.out.printf("MAIOR VALOR = %.1f\n", maior);
+        System.out.printf("POSICAO DO MAIOR VALOR = %d\n", posMaior);
+
     }
 
 }

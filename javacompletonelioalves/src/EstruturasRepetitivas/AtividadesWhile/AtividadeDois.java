@@ -21,7 +21,7 @@ public class AtividadeDois {
             } else if (coordenadaX < 0 && coordenadaY < 0) {
                 System.out.println("Terceiro");
             } else {
-                System.out.println("Rent");
+                System.out.println("Quarto");
 
             }
             coordenadaX = scan.nextInt();
