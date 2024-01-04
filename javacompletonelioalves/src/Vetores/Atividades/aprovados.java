@@ -7,6 +7,8 @@ public class aprovados {
 
         Scanner scan = new Scanner(System.in);
 
+        double media;
+
         System.out.print("Quantos alunos serão digitados? ");
         int n = scan.nextInt();
 
@@ -23,11 +25,16 @@ public class aprovados {
         }
         System.out.println("Alunos aprovados");
 
-        double cont = 0;
-        for(int i = 0; i < n;i++){
-            cont = cont + primeiraNota[i] + segundaNota[i];
+
+        // Não precisou ser criado um contador, já foi feito direto...
+        for (int i = 0; i < n; i++) {
+            media = (primeiraNota[i] + segundaNota[i]) / 2;
+            if (media >= 6) {
+                System.out.println(nomes[i]);
+            }
         }
-        double media = cont / 2;
-        System.out.println(n);
+
+
     }
 }
+

@@ -7,6 +7,8 @@ public class mais_velho {
 
         Scanner scan = new Scanner(System.in);
 
+        int maiorIdade, posicaoMaior;
+
         System.out.print("Quantas pessoas você vai digitar? ");
         int n = scan.nextInt();
 
@@ -20,12 +22,17 @@ public class mais_velho {
             System.out.print("Idade: ");
             idades[i] = scan.nextInt();
         }
+
+        maiorIdade = idades[0];
+        posicaoMaior = 0;
         for (int i = 0; i < n; i++) {
-            if (idades[i] > 0) {
-                System.out.println(idades[i]);
+            if (idades[i] > maiorIdade) {
+                maiorIdade = idades[i];
+                posicaoMaior = i;
 
             }
         }
+        System.out.println("Pessoa mais velha = " + nomes[posicaoMaior]);
     }
 
 
