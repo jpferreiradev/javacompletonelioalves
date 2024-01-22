@@ -13,6 +13,7 @@ public class exemploTeste {
         Instant data = Instant.now();
 
 
+
         System.out.println(dataHoje);
         System.out.println(dataHojeHora);
         System.out.println(data);
