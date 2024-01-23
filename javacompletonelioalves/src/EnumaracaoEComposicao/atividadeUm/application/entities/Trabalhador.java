@@ -8,20 +8,20 @@ import java.util.List;
 public class Trabalhador {
     //Atributos
     private String name;
-    private NivelTrabalho nivelTrabalho;
+    private NivelTrabalho nivel;
     private Double salarioBase;
 
     //Associações
     private Departamento departamento;
-    private List<HoraContrato> contratos = new ArrayList<>(); // Por ter varios contratos, foi feito uma lista;
+    private List<HoraContrato> contratos = new ArrayList<>(); // Por ter varios contratos, foi feito uma lista; Composição tem muitos;
 
     // Construtores
-    public Trabalhador(){
+    public Trabalhador(){ // Construtor padrão
 
     }
-    public Trabalhador(String name, NivelTrabalho nivelTrabalho, double salarioBase, Departamento departamento){
+    public Trabalhador(String name, NivelTrabalho nivelTrabalho, double salarioBase, Departamento departamento){ // Construtor com arqgumentos
         this.name = name;
-        this.nivelTrabalho = nivelTrabalho;
+        this.nivel = nivelTrabalho;
         this.salarioBase = salarioBase;
         this.departamento = departamento;
     }
@@ -33,10 +33,10 @@ public class Trabalhador {
         this.name = name;
     }
     public NivelTrabalho getNivelTrabalho(){
-        return nivelTrabalho;
+        return nivel;
     }
     public void setNivelTrabalho(NivelTrabalho nivelTrabalho){
-        this.nivelTrabalho = nivelTrabalho;
+        this.nivel = nivelTrabalho;
     }
     public double getSalarioBase(){
         return salarioBase;
@@ -44,16 +44,32 @@ public class Trabalhador {
     public void setSalarioBase(double salarioBase){
         this.salarioBase = salarioBase;
     }
+    public Departamento getDepartamento(){
+        return this.departamento = departamento;
+    }
+    public void setDepartamento(Departamento departamento){
+        this.departamento = departamento;
+    }
+
+    public List<HoraContrato> getContratos() {
+        return contratos;
+    }
+
 
     public void adicionarContrato(HoraContrato contrato){
-
+        contratos.add(contrato); // metodo usando ArrayList
     }
     public void removerContrato(HoraContrato contrato){
-
+        contratos.remove(contrato); // metodo usando ArrayList
     }
+   /*
     public double renda(Integer ano, Integer mes){
-        return 0;
+        double soma = salarioBase;
+        for(HoraContrato c : contratos){
+
+        }
     }
+    */
 }
 
-// Falta os get e set de Departamento a Listas
+
