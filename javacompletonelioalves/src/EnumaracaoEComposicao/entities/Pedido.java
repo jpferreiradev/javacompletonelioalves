@@ -1,38 +1,42 @@
 package EnumaracaoEComposicao.entities;
 
-import java.util.Calendar;
+import EnumaracaoEComposicao.etities.enums.OrdemEstatus;
+
 import java.util.Date;
 
 public class Pedido {
 
     private Integer id;
     private Date moment;
-    private OrderStatus status; // Atributo do tipo enum;
+    private OrdemEstatus status; //Um atributo do Tipo OrdemEStatus que é um ENUM;
 
     public Pedido(){
 
     }
-    public Pedido(Integer id, Date moment,OrderStatus status){
+    public Pedido(Integer id, Date moment, OrdemEstatus status){
         this.id = id;
         this.moment = moment;
         this.status = status;
     }
+
     public Integer getId(){
         return id;
     }
     public void setId(Integer id){
         this.id = id;
     }
+
     public Date getMoment(){
-        return moment;
+        return this.moment;
     }
     public void setMoment(Date moment){
         this.moment = moment;
     }
-    public OrderStatus getStatus(){
+
+    public OrdemEstatus getStatus(){
         return status;
     }
-    public void setStatus(OrderStatus status){
+    public void setStatus(OrdemEstatus status){
         this.status = status;
     }
 
