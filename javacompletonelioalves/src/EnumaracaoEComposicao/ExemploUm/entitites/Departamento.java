@@ -4,10 +4,10 @@ public class Departamento {
 
     private String nome;
 
-    Departamento(){
+    public Departamento(){
 
     }
-    Departamento(String nome){
+    public Departamento(String nome){
         this.nome = nome;
     }
 
