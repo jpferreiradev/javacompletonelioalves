@@ -9,10 +9,10 @@ public class HoraContrato {
     private Integer hora;
 
 
-    HoraContrato(){
+    public HoraContrato(){
 
     }
-    HoraContrato(Date data, Double valorPorHora, int hora){
+    public HoraContrato(Date data, Double valorPorHora, int hora){
         this.data = data;
         this.valorPorHora = valorPorHora;
         this.hora = hora;

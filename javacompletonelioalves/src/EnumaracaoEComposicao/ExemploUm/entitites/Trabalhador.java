@@ -13,7 +13,7 @@ public class Trabalhador {
     private Double baseSalarial;
 
 
-    // Composição de OBJETOS, feitos com a
+    // COMPOSIÇÃO DE OBJETOS, feitos com a
     private Departamento departamento; // Associação tem UM
     private List<HoraContrato> contratos = new ArrayList<>(); // Assoiação tem MUITOS, foi representado por uma lista;
 
