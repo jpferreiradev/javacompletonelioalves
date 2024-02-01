@@ -9,7 +9,7 @@ import java.util.List;
 public class Ordem {
 
     private Date momento;
-    private List<OrdemEStatus> status = new ArrayList<>();
+    private List<OrdemPedido> pedidos = new ArrayList<>();
 
     public Ordem(){
 
@@ -17,6 +17,7 @@ public class Ordem {
 
     public Ordem(Date momento){
         this.momento = momento;
+
 
     }
 
@@ -28,17 +29,22 @@ public class Ordem {
         this.momento = momento;
     }
 
-    public List<OrdemEStatus> getStatus() {
-        return status;
+    public List<OrdemPedido> getPedidos() {
+        return pedidos;
     }
 
-    public void adicionarStatus(OrdemEStatus ordemEStatus){
-        status.add(ordemEStatus);
+    public void adicionarStatus(OrdemPedido ordemPedido ){
+        pedidos.add(ordemPedido);
     }
-    public void deletarStatus(OrdemEStatus ordemEStatus){
-        status.remove(ordemEStatus);
+    public void deletarStatus(OrdemPedido ordemPedido){
+        pedidos.remove(ordemPedido);
     }
     public double total(){
+        for( OrdemPedido c : pedidos){
+            double total;
+            total = c.subTotal();
 
+        }
+    return total();
     }
 }
