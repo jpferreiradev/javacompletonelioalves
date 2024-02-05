@@ -2,8 +2,8 @@ package EnumaracaoEComposicao.Atividade.entitites.enums;
 
 public enum OrdemEStatus {
 
-    PAGAMENTO_PENDENTE,
-    PROCESSANDO,
+   PAGAMENTO_PEDENTE,
+    PROCESSAMENTO,
     ENVIADO,
     ENTREGUE;
 }

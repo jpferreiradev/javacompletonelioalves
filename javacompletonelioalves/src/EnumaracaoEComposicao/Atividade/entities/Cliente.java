@@ -17,11 +17,10 @@ public class Cliente {
         this.dataAniversario = dataAniversario;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNome(){
+        return nome = nome;
     }
-
-    public void setNome(String nome) {
+    public void setNome(String nome){
         this.nome = nome;
     }
 

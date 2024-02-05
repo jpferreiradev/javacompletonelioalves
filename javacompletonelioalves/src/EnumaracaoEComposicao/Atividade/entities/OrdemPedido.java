@@ -8,7 +8,7 @@ public class OrdemPedido {
     public OrdemPedido(){
 
     }
-    public OrdemPedido(Integer quantidade, double preco){
+    public OrdemPedido(Integer quantidade, Double preco) {
         this.quantidade = quantidade;
         this.preco = preco;
     }
@@ -30,6 +30,6 @@ public class OrdemPedido {
     }
 
     public Double subTotal(){
-        return quantidade * preco;
+        return preco * quantidade;
     }
 }
