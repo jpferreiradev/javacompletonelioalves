@@ -34,17 +34,17 @@ public class Program {
         System.out.println("Quantos itens para este pedido?");
         int numeroPedidos = scan.nextInt();
         for(int i = 0; i < numeroPedidos;i++){
-            System.out.println("Insira os dados do item nº" + i );
-            System.out.println("Nome do produto: ");
+            System.out.println("Insira os dados do item nº" + (i+1));
+            System.out.print("Nome do produto: ");
             String nomeProduto = scan.next();
-            System.out.println("Preço do produto: ");
+            System.out.print("Preço do produto: ");
             double precoProduto = scan.nextDouble();
-            System.out.println("Quantidade: ");
+            System.out.print("Quantidade: ");
             int quantidadeProduto = scan.nextInt();
             Produto produto = new Produto(nomeProduto,precoProduto);
             OrdemPedido ordemPedido = new OrdemPedido(quantidadeProduto,produto.getPreco());
         }
-        
+
 
     }
 }
