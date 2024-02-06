@@ -3,6 +3,7 @@ package EnumaracaoEComposicao.Atividade.entities;
 import EnumaracaoEComposicao.Atividade.entitites.enums.OrdemEStatus;
 
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -12,6 +13,7 @@ public class Ordem {
     private Date momento;
     private OrdemEStatus status;
 
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
     private List<OrdemPedido> pedidos = new ArrayList<>(); // Assosiação de Ordem com OrdemPedido ( Composição)
 
     public Ordem(){
@@ -53,6 +55,14 @@ public class Ordem {
     public double total(OrdemPedido ordemPedido){
         double valorTotal;
         return ordemPedido.subTotal();
+    }
+
+    @Override
+    public String toString() {
+        return "Ordem{" +
+                "momento=" + momento +
+                ", status=" + status +
+                '}';
     }
 }
 
