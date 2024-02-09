@@ -1,9 +1,11 @@
 package EnumaracaoEComposicao.Atividade.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Cliente {
 
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy ");
     private String nome;
     private String email;
     private Date dataAniversario;
@@ -38,5 +40,12 @@ public class Cliente {
 
     public void setDataAniversario(Date dataAniversario) {
         this.dataAniversario = dataAniversario;
+    }
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Cliente: " + nome  + " " + sdf.format(dataAniversario) + email);
+        return sb.toString();
+
     }
 }

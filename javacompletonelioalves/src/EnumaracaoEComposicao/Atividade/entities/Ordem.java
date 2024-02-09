@@ -13,10 +13,10 @@ public class Ordem {
     private Date momento;
     private OrdemEStatus status;
 
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
     private List<OrdemPedido> pedidos = new ArrayList<>(); // Assosiação de Ordem com OrdemPedido ( Composição)
 
-    public Ordem(){
+    public Ordem() {
 
     }
 
@@ -45,14 +45,16 @@ public class Ordem {
         return pedidos;
     }
 
-    public void adicionarPedido(OrdemPedido ordemPedido){
+    public void adicionarPedido(OrdemPedido ordemPedido) {
         pedidos.add(ordemPedido);
     }
-    public void removerPedido(OrdemPedido ordemPedido){
+
+    public void removerPedido(OrdemPedido ordemPedido) {
         pedidos.remove(ordemPedido);
 
     }
-    public double total(OrdemPedido ordemPedido){
+
+    public double total(OrdemPedido ordemPedido) {
         double valorTotal;
         return ordemPedido.subTotal();
     }
