@@ -34,7 +34,7 @@ public class Program {
         String statusPedido = scan.next();
         //System.out.println("Status:" + OrdemEStatus.valueOf(statusPedido));
 
-        /*
+
         System.out.print("Quantos itens para este pedido?");
         int numeroPedidos = scan.nextInt();
         for (int i = 0; i < numeroPedidos; i++) {
@@ -48,13 +48,18 @@ public class Program {
             Produto produto = new Produto(nomeProduto, precoProduto);
             OrdemPedido ordemPedido = new OrdemPedido(quantidadeProduto, produto.getPreco());
         }
-        */
+
         Ordem ordem = new Ordem(sdf.parse("20/04/2018 11:25:09"), OrdemEStatus.valueOf(statusPedido));
         System.out.println("RESUMO DO PEDIDO:");
         System.out.println("Momento do pedido: " + ordem.getMomento());
         System.out.println("Status do pedido: " + statusPedido);
         System.out.println(cliente.toString());
         System.out.println("Lista de ordem dos itens: ");
+        System.out.println();
+
+        System.out.println("Preço total: ");
+
+
 
 
 

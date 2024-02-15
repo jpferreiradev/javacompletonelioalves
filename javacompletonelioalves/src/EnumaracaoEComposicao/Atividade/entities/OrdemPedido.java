@@ -29,6 +29,14 @@ public class OrdemPedido {
         this.preco = preco;
     }
 
+    @Override
+    public String toString() {
+        return "OrdemPedido{" +
+                "quantidade=" + quantidade +
+                ", preco=" + preco +
+                '}';
+    }
+
     public Double subTotal(){
         return preco * quantidade;
     }

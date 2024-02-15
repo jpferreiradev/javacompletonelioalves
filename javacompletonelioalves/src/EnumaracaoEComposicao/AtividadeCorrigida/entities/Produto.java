@@ -1,4 +1,4 @@
-package EnumaracaoEComposicao.Atividade.entities;
+package EnumaracaoEComposicao.AtividadeCorrigida.entities;
 
 public class Produto {
 
@@ -8,7 +8,7 @@ public class Produto {
     public Produto(){
 
     }
-    public Produto(String nome, Double preco) {
+    public Produto(String nome,double preco){
         this.nome = nome;
         this.preco = preco;
     }
@@ -27,13 +27,5 @@ public class Produto {
 
     public void setPreco(Double preco) {
         this.preco = preco;
-    }
-
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "nome='" + nome + '\'' +
-                ", preco=" + preco +
-                '}';
     }
 }

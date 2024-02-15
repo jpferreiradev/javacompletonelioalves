@@ -10,10 +10,12 @@ import java.util.List;
 
 public class Ordem {
 
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
     private Date momento;
     private OrdemEStatus status;
 
 
+    private Cliente cliente;
     private List<OrdemPedido> pedidos = new ArrayList<>(); // Assosiação de Ordem com OrdemPedido ( Composição)
 
     public Ordem() {
@@ -61,10 +63,9 @@ public class Ordem {
 
     @Override
     public String toString() {
-        return "Ordem{" +
-                "momento=" + momento +
-                ", status=" + status +
-                '}';
+       //StringBuilder sb = new StringBuilder();
+       //sb.append(");
+        return "s";
     }
 }
 
