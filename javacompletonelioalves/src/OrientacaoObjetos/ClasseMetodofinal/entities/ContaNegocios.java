@@ -1,4 +1,4 @@
-package OrientacaoObjetos.Sobreposicao.entities;
+package OrientacaoObjetos.ClasseMetodofinal.entities;
 
 public class ContaNegocios extends Conta {
 

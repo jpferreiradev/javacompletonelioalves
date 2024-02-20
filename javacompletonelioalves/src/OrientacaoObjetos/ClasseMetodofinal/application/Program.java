@@ -1,8 +1,8 @@
-package OrientacaoObjetos.Sobreposicao.application;
+package OrientacaoObjetos.ClasseMetodofinal.application;
 
-import OrientacaoObjetos.Sobreposicao.entities.Conta;
-import OrientacaoObjetos.Sobreposicao.entities.ContaNegocios;
-import OrientacaoObjetos.Sobreposicao.entities.ContaPoupanca;
+import OrientacaoObjetos.ClasseMetodofinal.entities.Conta;
+import OrientacaoObjetos.ClasseMetodofinal.entities.ContaNegocios;
+import OrientacaoObjetos.ClasseMetodofinal.entities.ContaPoupanca;
 
 public class Program {
     public static void main(String[] args) {
