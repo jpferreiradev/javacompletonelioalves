@@ -29,6 +29,7 @@ public class Program {
         System.out.print("Data de nascimento: ");
         String dataNascimento = scan.next();
         Cliente cliente = new Cliente(nomeCliente, emailCliente, sd.parse(dataNascimento));
+
         System.out.println("Insira os dados do pedido: ");
         System.out.print("Status: ");
         String statusPedido = scan.next();

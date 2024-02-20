@@ -25,6 +25,7 @@ public class Ordem {
     public Ordem(Date momento, OrdemEStatus status) {
         this.momento = momento;
         this.status = status;
+        // Faltou a classe Cliente
     }
 
     public Date getMomento() {
@@ -56,13 +57,13 @@ public class Ordem {
 
     }
 
-    public double total(OrdemPedido ordemPedido) {
+    public double total(OrdemPedido ordemPedido) { // Deveria ter utilizado um for para interar todos os pedidos
         double valorTotal;
         return ordemPedido.subTotal();
     }
 
     @Override
-    public String toString() {
+    public String toString() { // Deveria ter utilizado a classe StringBuilder
        //StringBuilder sb = new StringBuilder();
        //sb.append(");
         return "s";

@@ -15,7 +15,7 @@ public class Ordem {
     private OrdemStatus status;
 
     private Cliente cliente; // Primeira associação tem um com a classe Cliente;
-    private List<ItemPedido> itens = new ArrayList<ItemPedido>(); // Segunda assoicação com ItemPedido, foi criado uma lista
+    private List<ItemPedido> itens = new ArrayList<ItemPedido>(); // Segunda assosiação com ItemPedido, foi criado uma lista
 
     public Ordem() {
 
