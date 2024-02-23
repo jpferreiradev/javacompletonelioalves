@@ -43,4 +43,6 @@ public class Funcionario {
     public Double pagamento(){
         return  valorPorHora * hora;
     }
+
+
 }
