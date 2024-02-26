@@ -4,15 +4,18 @@ import OrientacaoObjetos.SegundaParte.Atividades.entities.Funcionario;
 import OrientacaoObjetos.SegundaParte.Atividades.entities.FuncionarioTerceiro;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
 
 
+        Locale.setDefault(Locale.US); // Classe para mudar a região, usar o . em vez da ,
         Scanner scan = new Scanner(System.in);
-        //ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+
         ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
+        //List<Funcionario> list = new ArrayList<>(); -> Ele fez dessa maneira;
 
         //funcionarios.addAll(funcionarios);
 
@@ -31,7 +34,8 @@ public class Program {
                 Double valorHora = scan.nextDouble();
                 System.out.print("Valor adicional: ");
                 Double valorAdicional = scan.nextDouble();
-                FuncionarioTerceiro funcionarioTerceiro = new FuncionarioTerceiro(nome, hora, valorHora, valorAdicional);
+                //FuncionarioTerceiro funcionarioTerceiro = // Outra forma de fazer, adicionando na lista;
+                funcionarios.add(new FuncionarioTerceiro(nome, hora, valorHora, valorAdicional));
             } else {
                 System.out.print("Nome: ");
                 String nome = scan.next();
@@ -39,14 +43,18 @@ public class Program {
                 Integer hora = scan.nextInt();
                 System.out.print("Valor por hora: ");
                 Double valorHora = scan.nextDouble();
-                Funcionario funcionario = new Funcionario(nome, hora, valorHora);
+                //Funcionario funcionario = // Outra forma de fazer adicionando na lista;
+                funcionarios.add(new Funcionario(nome, hora, valorHora));
             }
 
 
         }
+
+
         System.out.println("PAGAMENTOS:");
         for (Funcionario f : funcionarios){
-            
+            System.out.println(f.getNome() + " - $" + f.pagamento());
+
         }
 
     }

@@ -6,7 +6,7 @@ public class Funcionario {
     private Integer hora;
     private Double valorPorHora;
 
-    public Funcionario(){
+    public Funcionario() {
 
     }
 
@@ -40,9 +40,10 @@ public class Funcionario {
         this.valorPorHora = valorPorHora;
     }
 
-    public Double pagamento(){
-        return  valorPorHora * hora;
+    public Double pagamento() {
+        return valorPorHora * hora;
     }
 
 
 }
+
