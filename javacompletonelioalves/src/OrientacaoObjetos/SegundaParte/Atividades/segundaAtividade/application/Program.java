@@ -4,13 +4,16 @@ import OrientacaoObjetos.SegundaParte.Atividades.segundaAtividade.entities.Produ
 import OrientacaoObjetos.SegundaParte.Atividades.segundaAtividade.entities.ProdutoImportado;
 import OrientacaoObjetos.SegundaParte.Atividades.segundaAtividade.entities.ProdutoUsado;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Program {
-    public static void main(String[]args){
+    public static void main(String[]args) {
 
-        SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
+        //SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy"); -> Substituido pelo LocalDate
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
 
@@ -44,14 +47,16 @@ public class Program {
                 String nome = scan.next();
                 System.out.print(" Preço:");
                 double preco = scan.nextDouble();
-                System.out.print(" Data de fabricação: DD/MM/YYYY");
-                String data = scan.next();
-                Produto produdoUsado = new ProdutoUsado(nome,preco,new Date(sdf.format(data)));
+                System.out.print(" Data de fabricação: DD/MM/YYYY: ");
+                //String data = scan.next();
+                LocalDate date = LocalDate.parse(scan.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+                Produto produdoUsado = new ProdutoUsado(nome,preco,date);
                 list.add(produdoUsado);
             }
 
         }
-        System.out.println("Etiqueta de preço");
+        System.out.println();
+        System.out.println("Etiqueta de preço:");
         for( Produto p : list){
             System.out.println(p.etiquetaDePreco());
         }
