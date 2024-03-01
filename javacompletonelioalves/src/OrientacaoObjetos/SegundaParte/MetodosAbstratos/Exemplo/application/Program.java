@@ -1,6 +1,5 @@
 package OrientacaoObjetos.SegundaParte.MetodosAbstratos.Exemplo.application;
 
-import OrientacaoObjetos.SegundaParte.Atividades.segundaAtividade.entities.Produto;
 import OrientacaoObjetos.SegundaParte.MetodosAbstratos.Exemplo.entities.Circulo;
 import OrientacaoObjetos.SegundaParte.MetodosAbstratos.Exemplo.entities.Forma;
 import OrientacaoObjetos.SegundaParte.MetodosAbstratos.Exemplo.entities.Retangulo;
