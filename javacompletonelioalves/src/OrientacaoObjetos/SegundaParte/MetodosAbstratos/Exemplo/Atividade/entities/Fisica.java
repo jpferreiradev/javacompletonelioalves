@@ -24,7 +24,7 @@ public class Fisica extends Contribuinte {
 
     @Override
     public double taxa() {
-        if (getRendaAnual() < 20000.00 && getDepesaSaude() > 0) {
+        if (getRendaAnual() > 20000.00 && getDepesaSaude() > 0) {
             return (getRendaAnual() * 2.5) - (getDepesaSaude() * 5);
         } else {
             return getRendaAnual() * 1.5;
