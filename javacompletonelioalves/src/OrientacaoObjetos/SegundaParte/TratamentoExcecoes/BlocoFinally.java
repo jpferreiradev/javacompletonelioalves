@@ -8,19 +8,20 @@ public class BlocoFinally {
     public static void main(String[] args) {
 
         File file = new File("C:\\temp\\in.txt"); // Manipulando arquivos do PC
-         Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-        try{
+
+        try {
             scan = new Scanner(file);
-            while(scan.hasNextLine()){
+            while (scan.hasNextLine()) {
                 System.out.println(scan.nextLine());
             }
         }
-        catch (FileNotFoundException e){
-            System.out.println( "Error ao abrir o arquivo: " + e.getMessage());
+        catch (FileNotFoundException e) {
+            System.out.println("Error ao abrir o arquivo: " + e.getMessage());
         }
         finally {
-            if(scan != null){
+            if (scan != null) {
                 scan.close();
             }
             System.out.println("Executou o bloco finally...");
