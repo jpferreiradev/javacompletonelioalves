@@ -13,5 +13,6 @@ public class ClassTest {
         double valor = scan.nextDouble();
         double resultado = CurrencyConverter.conversaoDolar(valor,precoDolar);
         System.out.printf("Amount to be paid in reais = %.2f%n", resultado);
+
     }
 }
