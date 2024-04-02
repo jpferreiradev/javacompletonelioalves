@@ -13,7 +13,7 @@ public class ExempleTwo {
         Product[] vect = new Product[n];
 
         for(int i = 0; i < vect.length;i++){
-           scan.nextLine();
+            scan.nextLine();
             String name = scan.nextLine();
             double price = scan.nextDouble();
             vect[i] = new Product(name,price);
