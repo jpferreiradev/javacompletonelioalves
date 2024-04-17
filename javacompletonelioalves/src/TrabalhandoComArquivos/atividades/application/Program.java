@@ -57,7 +57,7 @@ public class Program {
                     bw.write(item.getNome() + "," + String.format("%.2f",item.total()));
                     bw.newLine();
                 }
-                System.out.println(arquivoDestino + "Criado" );
+                System.out.println(arquivoDestino + " foi criado" );
             } catch (IOException e){
                 System.out.println("Error na leitura do arquivo" + e.getMessage());
             }
