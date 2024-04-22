@@ -1,23 +1,23 @@
 package OrientacaoObjetos.Interfaces.Exemplo.model.entities;
 
+
 import java.time.LocalDateTime;
 
 public class CarRental {
 
-
+    // Foi usado o LocalDateTime por causa do horario
     private LocalDateTime star;
     private LocalDateTime finish;
 
     private Vehicle vehicle;
     private Invoice invoice;
 
-    public CarRental(){}
+    public CarRental() {}
 
     public CarRental(LocalDateTime star, LocalDateTime finish, Vehicle vehicle) {
         this.star = star;
         this.finish = finish;
         this.vehicle = vehicle;
-
     }
 
     public LocalDateTime getStar() {

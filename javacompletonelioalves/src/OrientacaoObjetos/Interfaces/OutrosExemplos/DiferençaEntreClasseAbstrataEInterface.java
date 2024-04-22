@@ -1,4 +1,4 @@
-package OrientacaoObjetos.Interfaces.Exemplos;
+package OrientacaoObjetos.Interfaces.OutrosExemplos;
 
 public class DiferençaEntreClasseAbstrataEInterface {
 
