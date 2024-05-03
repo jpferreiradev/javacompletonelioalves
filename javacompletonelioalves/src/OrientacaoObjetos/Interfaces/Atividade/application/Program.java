@@ -33,7 +33,7 @@ public class Program {
 
         Contrato obj = new Contrato(numero, data, valorContrato);
 
-        // A partir daqui preste bastante atencão!
+        // A partir daqui preste bastante atencão! ----
 
         System.out.print("Entre com o número de parcelas: ");
         int n = scan.nextInt();
