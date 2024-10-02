@@ -1,38 +1,37 @@
 package GenerecsSetMap.IntroducaoGenerics.SolucaoComGenerecs.application;
 
 
-import GenerecsSetMap.IntroducaoGenerics.SolucaoComGenerecs.services.PrintService;
+import GenerecsSetMap.IntroducaoGenerics.SolucaoComGenerecs.services.PrintServiceGenerics;
 
 import java.util.Scanner;
-
 
 public class Program {
     public static void main(String[] args) {
 
-
         Scanner scan = new Scanner(System.in);
 
-        PrintService<Integer> printService = new PrintService<>(); // No final é preciso utilizar o <> para indicar que você está usando um tipo generitc
-        //PrintService<String> printService = new PrintService<String>();
+        // Você precisa colocar no final o <> para indicar que você está instanciando um generics
+        //PrintServiceGenerics<Integer> ps = new PrintServiceGenerics<>();
+        //PrintServiceGenerics<Integer> ps = new PrintServiceGenerics<Integer>();
+        PrintServiceGenerics<String> ps = new PrintServiceGenerics<>(); // Mudando para String
 
-        System.out.print("Quantos valores?");
+        System.out.print("Quantos valores você vai digitar: ");
         int n = scan.nextInt();
 
-        //printService.addValue("JP"); -> Nesse caso aqui, não pode usar o tipo String, só Integer, mas caso queira usalo, precisa instanciar
+        //ps.addValue("Maria"); //Ele não vai deixar você adicionar uma String, e sim só inteiros
 
         for (int i = 0; i < n; i++) {
-            Integer valor = scan.nextInt();
-            //String valor2 = scan.next(); -> Caos queria mudar pra String
-            printService.addValue(valor);
+            //Integer valor = scan.nextInt();
+            String valor = scan.next();
+            ps.addValue(valor);
         }
 
-        printService.print();
-        //String x = printService.frist();
-        //printService.addValue(valor2); -> Caso queira usar String
 
-        System.out.println("Primeiro: " + printService.frist());
-
+        ps.print();
+        //Integer x = ps.first(); Funcionou para inteiro
+        //Integer x = ps.first();
+        String x = ps.first();
+        System.out.println("Primeiro: " + x);
 
     }
 }
-
