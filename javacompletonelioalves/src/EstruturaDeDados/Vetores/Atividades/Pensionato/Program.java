@@ -12,7 +12,7 @@ public class Program {
         System.out.print("How many rooms will be rented? ");
         int n = scan.nextInt();
 
-        for (int i = 1; i <=n; i++) {
+        for (int i = 1; i <= n; i++) {
             System.out.println();
             System.out.println("Rent #" + i + ":");
             System.out.print("Name: ");
@@ -26,11 +26,12 @@ public class Program {
             vect[roomNumber] = new Rent(name, email); // Ele instanciou o
         }
         System.out.println();
+
         System.out.println("Busy rooms:");
         for (int i = 0; i < 10; i++) {
-           if(vect[i] != null){
-               System.out.println(i + ":" + vect[i]);
-           }
+            if (vect[i] != null) {
+                System.out.println(i + ":" + vect[i]);
+            }
         }
     }
 }
