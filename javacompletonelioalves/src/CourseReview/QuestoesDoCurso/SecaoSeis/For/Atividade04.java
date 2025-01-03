@@ -7,8 +7,24 @@ public class Atividade04 {
 
         Scanner scan = new Scanner(System.in);
 
-        for(int i = 0; i < 10;i++){
-            System.out.println(i);
+        System.out.println("Informe a quantidade de números: ");
+        int quantidade = scan.nextInt();
+
+
+        for (int i = 0; i < quantidade; i++) {
+            int dividendo = scan.nextInt();
+            int divisor = scan.nextInt();
+
+            if(divisor == 0){
+                System.out.println("Divisão impossivel");
+            } else{
+                double div = (double) dividendo / divisor;
+                System.out.println(div);
+            }
+
+
+
         }
+
     }
 }

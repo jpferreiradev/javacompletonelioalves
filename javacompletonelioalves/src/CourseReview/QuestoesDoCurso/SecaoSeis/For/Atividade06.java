@@ -7,12 +7,13 @@ public class Atividade06 {
 
         Scanner scan = new Scanner(System.in);
 
-        int quantidade = scan.nextInt();
+        int numero = scan.nextInt();
 
-        for(int i = 0; i < quantidade; i++){
-            int numero = scan.nextInt();
-            int divisor = numero % 2;
-
+        for(int i =1; i <= numero; i++){
+            if(numero % i == 0){
+                System.out.println(i);
+            }
         }
+
     }
 }
