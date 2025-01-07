@@ -20,7 +20,7 @@ public class Atividade02 {
             if (x >= 10 && x <= 20) {
                 in = in + 1;
 
-            }else {
+            } else {
                 out = out + 1;
             }
 

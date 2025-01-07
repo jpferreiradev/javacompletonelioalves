@@ -10,7 +10,7 @@ public class Atividade07 {
         System.out.println("Informe o número: ");
         int numero = scan.nextInt();
 
-        for (int i = 1; i < numero; i++) {
+        for (int i = 1; i <= numero; i++) {
             int primeiro = i;
             int segundo = i * i;
             int terceiro = i * i * i;
