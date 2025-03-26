@@ -17,7 +17,7 @@ public class Program {
         System.out.print("Entre com nome da conta: ");
         scan.nextLine();
         String nome = scan.nextLine();
-        System.out.print("Vai ter deposito inicial: (y/n): ");
+        System.out.print("Vai ter deposito inicial: (S/N): ");
         char resposta = scan.next().charAt(0);
         if (resposta == 's') {
             System.out.print("Informe o valor do deposito inicial: ");
