@@ -27,6 +27,7 @@ public class Program {
         // Soma de todos os preços
         for(int i =0; i < vetor.length; i++) {
             soma += vetor[i].getPreco(); // Estudar isso aqui
+            //soma = soma + vetor[i].getPreco(); )-> Isso seria isso aqui
         }
 
         double media = soma / vetor.length;
