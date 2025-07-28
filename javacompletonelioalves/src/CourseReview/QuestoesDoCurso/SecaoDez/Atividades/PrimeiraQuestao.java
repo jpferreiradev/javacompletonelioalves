@@ -1,4 +1,4 @@
-package CourseReview.QuestoesDoCurso.SecaoDez;
+package CourseReview.QuestoesDoCurso.SecaoDez.Atividades;
 
 import java.util.Locale;
 import java.util.Scanner;

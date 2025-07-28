@@ -11,7 +11,7 @@ public class ExemploWhile {
         int numero = scan.nextInt();
 
         while(numero != 0){
-            System.out.println("Informe novamente esse número: ");
+            //System.out.println("Informe novamente esse número: ");
             numero = scan.nextInt();
         }
     }

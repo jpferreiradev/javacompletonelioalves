@@ -12,7 +12,7 @@ public class QuebraDeLinhaPendente {
         String s1,s2,s3;
 
         x = scan.nextInt();
-        scan.nextLine(); // Você precisar colocar um nextLine para consumir a quebra de linha pendente, limpar o buffer de leitura
+        scan.nextLine(); // Você precisar colocar um nextLine para consumir a quebra de linha pendente, limpar o buffer de leitura, AGORA VOCÊ ENTENDEU!
         s1 = scan.nextLine();
         s2 = scan.nextLine();
         s3 = scan.nextLine();

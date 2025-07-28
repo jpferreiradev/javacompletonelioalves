@@ -1,4 +1,4 @@
-package CourseReview.OrientacaoObjetos.SemOO.application;
+package CourseReview.OrientacaoObjetos.SemOO;
 
 import java.util.Locale;
 import java.util.Scanner;

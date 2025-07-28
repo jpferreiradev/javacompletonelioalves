@@ -11,7 +11,7 @@ public class EstruturaBasica {
         int idade = scan.nextInt();
 
 
-        // Sintaxe simple
+        // Sintaxe simples
         if(idade >= 18){
             System.out.println("Maior de idade");
         }
