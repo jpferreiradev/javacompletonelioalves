@@ -21,6 +21,7 @@ public class Program {
         x.a = scan.nextDouble();
         x.b = scan.nextDouble();
         x.c = scan.nextDouble();
+
         System.out.println("Entre com os valores de Y: ");
         y.a = scan.nextDouble();
         y.b = scan.nextDouble();
@@ -32,6 +33,7 @@ public class Program {
 
         System.out.printf("Triângulo área X: %.4f%n", areaX);
         System.out.printf("Triângulo área Y: %.4f%n", areaY);
+
 
         if (areaX > areaY) {
             System.out.println("Area do triângulo X é maior");
