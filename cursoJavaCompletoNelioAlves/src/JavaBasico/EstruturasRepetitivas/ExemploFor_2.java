@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class ExemploFor_2 {
     static void main() {
 
+
+            // Aqui temos um exemplo de contador
         Scanner scan = new Scanner(System.in);
 
         int valor;
