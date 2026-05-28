@@ -1,4 +1,4 @@
-package OrientacaoObjetos.Sessao_10;
+package OrientacaoObjetos.Sessao_10.Vetor;
 
 import java.util.Locale;
 import java.util.Scanner;

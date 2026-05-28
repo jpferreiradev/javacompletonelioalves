@@ -1,4 +1,4 @@
-package OrientacaoObjetos.Sessao_10;
+package OrientacaoObjetos.Sessao_10.Vetor;
 
 public class ExemploVetor {
     static void main() {
