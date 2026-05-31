@@ -14,7 +14,7 @@ public class ExemploQuestao {
         // numeros[i] -> Linha
         // numeros[i].length -> coluna
 
-        int numeros[][] = new int[n][n];  // -> n[linha] [colunas]
+        int numeros[][] = new int[n][n];  // -> n[linha] n[colunas]
 
         for (int i = 0; i < numeros.length; i++) { //Aqui pecorre a matriz inteira
             for (int j = 0; j < numeros[i].length; j++) {
@@ -32,12 +32,13 @@ public class ExemploQuestao {
         int negativo = 0; // variavel para quantidade de números negativo
         for (int i = 0; i < numeros.length; i++) {
             for (int j = 0; j < numeros[i].length ; j++) {
-                if (numeros[i][j] < 0) {
+                if (numeros[i][j] < 0) { //quantidade de números negativos
                     negativo++;
                 }
             }
 
         }
+        //
         System.out.println("Números negativos: " + negativo);
 
 

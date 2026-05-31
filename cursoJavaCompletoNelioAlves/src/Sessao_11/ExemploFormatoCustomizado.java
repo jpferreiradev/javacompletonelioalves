@@ -1,9 +1,6 @@
-package TopicosEspeciaisEmJavaDataHora;
+package Sessao_11;
 
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class ExemploFormatoCustomizado {
