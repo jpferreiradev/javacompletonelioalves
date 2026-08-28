@@ -1,0 +1,32 @@
+package Secao_12.exemploStringBuilder.application;
+
+import Secao_12.exemploStringBuilder.entities.Comment;
+import Secao_12.exemploStringBuilder.entities.Post;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class Program {
+    static void main() throws ParseException {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss"); // Usa na classe Date
+
+
+        Comment c1 = new Comment("Have a nice trip!");
+        Comment c2 = new Comment("How that's awesome!");
+        Post p1 = new Post(sdf.parse("21/06/2018 13:05:44"),"Traveling to new Zealand","I'm going to visit this wonderfull contry",12 );
+        p1.adicionarComentario(c1);
+        p1.adicionarComentario(c2);
+
+        Comment c3 =  new Comment("Good night!");
+        Comment c4 = new Comment("May the force be with you!");
+        Post p2 = new Post(sdf.parse("28/07/2018 23:14:19"),"Good night guys","See you tomorrow",5);
+        p2.adicionarComentario(c3);
+        p2.adicionarComentario(c4);
+
+
+        System.out.println(p1); // Composição das classes Comment e Post
+        System.out.println(p2);
+
+    }
+}

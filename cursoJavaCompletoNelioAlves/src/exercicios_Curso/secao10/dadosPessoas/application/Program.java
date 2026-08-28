@@ -39,6 +39,7 @@ public class Program {
         double menorAltura = pessoas[0].getAltura();
         double maiorAltura = pessoas[0].getAltura();
 
+        // Maior e Menor altura
         for (int i = 0; i < pessoas.length; i++) {
             somaAlturas += pessoas[i].getAltura();
             if (pessoas[i].getAltura() > maiorAltura) {
@@ -48,31 +49,37 @@ public class Program {
                 menorAltura = pessoas[i].getAltura();
             }
         }
-        //System.out.println(menorAltura);
-        System.out.println("Maior altura: " + maiorAltura);
-        System.out.println("Menor altura: " + menorAltura);
 
-        // Media das alturas da mulheres
 
-        double somaAlturaM = 0.0;
-        double mediaAlturaM = 0.0;
-        for (int i = 0; i < pessoas.length; i++) {
-            somaAlturas += pessoas[i].getAltura();
-            if (pessoas[i].getSexo() == 'F' || pessoas[i].getSexo() == 'f') {
-                somaAlturaM = somaAlturaM + pessoas[i].getAltura();
-                mediaAlturaM = somaAlturaM / pessoas.length;
-            }
-
-        }
-        System.out.printf("Soma das alturas das mulhres: %.2f%n", somaAlturaM);
-        System.out.printf("Média das alturas das mulheres = %.2f", mediaAlturaM);
-
+        // Pegar o numero de homens
         int quantidedeHomens = 0;
         for (int i = 0; i < pessoas.length; i++) {
             if (pessoas[i].getSexo() == 'M' || pessoas[i].getSexo() == 'm') {
                 quantidedeHomens++;
             }
         }
+        // Media das alturas da mulheres
+        double somaAlturaF = 0.0;
+        double mediaAlturaF = 0;
+        int quantidadeMulheres = 0;
+        for (int i = 0; i < pessoas.length; i++) {
+            somaAlturas += pessoas[i].getAltura();
+            if (pessoas[i].getSexo() == 'F' || pessoas[i].getSexo() == 'f') {
+                somaAlturaF = somaAlturaF + pessoas[i].getAltura();
+                quantidadeMulheres++; // Colocado primeiro em vez de já fazer a divisão;
+
+            }
+
+        }
+        mediaAlturaF = somaAlturaF /quantidadeMulheres++ ;
+
+        System.out.println("Menor altura: " + menorAltura);
+        System.out.println("Maior altura: " + maiorAltura);
+        System.out.printf("Soma das alturas das mulhres: %.2f%n", somaAlturaF);
+        System.out.printf("Média das alturas das mulheres = %.2f%n", mediaAlturaF);
         System.out.println("\nQuantidade de homens: " + quantidedeHomens);
+        System.out.println("Quantidade das mulheres: " + quantidadeMulheres);
+
+        scan.close();
     }
 }
