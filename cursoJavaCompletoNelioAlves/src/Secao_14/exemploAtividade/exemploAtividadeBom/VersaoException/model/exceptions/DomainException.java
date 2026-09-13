@@ -1,0 +1,12 @@
+package Secao_14.exemploAtividade.exemploAtividadeBom.VersaoException.model.exceptions;
+
+public class DomainException extends Exception {
+
+    private static final long serialVersionUID = 1L;
+
+    public DomainException(String mensagem) {
+        super(mensagem);
+    }
+
+
+}
